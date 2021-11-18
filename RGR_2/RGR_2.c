@@ -73,7 +73,7 @@ double get_Rb(float N[], float A[], float l[]) {
     printf("\nCalculate to Rb...\n");
 
     // Calculate and fill in params.
-    for (int i = 1; i < 5; ++i) {
+    for (int i = 1; i < plot; ++i) {
 
         sum_Li += l[i];  // sum all l(1-6).
         sum_Li_Ai += (l[i] / conv_A(A[i]));  // sum all divided (Li / Ai).
@@ -119,7 +119,7 @@ int main() {
 
     // СВОИ ЗНАЧЕНИЯ ВНОСИТЬ В ЭТОТ БЛОК!
     sigma = 0.2f;  // итоговое изменение длины всего бруса.
-    deltaT = 20;   // изменение температуры.
+    deltaT = 10;   // изменение температуры.
     plot = 6;      // ваше количество участков.
 
     // Ваши участки. Не забывай изменить их количество в переменной plot.
